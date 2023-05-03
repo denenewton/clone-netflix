@@ -1,0 +1,125 @@
+.featured {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--vertical {
+        width: inherit;
+        height: inherit;
+        background: linear-gradient(to top, #0b0b0b 10%, transparent 90%);
+    }
+
+    &--horizontal {
+        width: inherit;
+        height: inherit;
+        background: linear-gradient(to right, #0b0b0b 30%, transparent 70%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+        padding-bottom: 150px;
+        padding-top: 70px;
+    }
+
+    &--name {
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    &--info {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 15px;
+    }
+
+    &--points,
+    &--year,
+    &--seasons {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    &--points {
+        color: #46d369;
+    }
+
+    &--description {
+        margin-top: 15px;
+        font-size: 20px;
+        color: #999;
+        max-width: 40%;
+    }
+
+    &--buttons {
+        margin-top: 15px;
+    }
+
+    &--watch-button,
+    &--mylist-button {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-right: 15px;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity .3s ease;
+    }
+
+    &--watch-button {
+        background-color: #fff;
+        color: #0b0b0b;
+
+    }
+
+    &--mylist-button {
+        background-color: #333;
+        color: #fff;
+    }
+
+    &--watch-button:hover,
+    &--mylist-button:hover {
+        opacity: .7;
+    }
+
+    &--genres {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #999;
+    }
+
+    @media (max-width: 760px) {
+        & {
+            height: 85vh;
+        }
+
+        &--name {
+            font-size: 40px;
+        }
+
+        &--info {
+            font-size: 16px;
+        }
+
+        &--description {
+            font-size: 14px;
+            max-width: 80%;
+            margin-right: 30px;
+        }
+
+        &--watch-button,
+        &--mylist-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        &--genres {
+            font-size: 14px;
+        }
+
+    }
+
+}
